@@ -1,0 +1,56 @@
+.hero {
+  animation: changeBackground 12s infinite;
+  background-size: cover;
+  background-position: center;
+  color: rgb(29, 8, 8);
+  text-align: center;
+  padding: 100px 80px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+  color: rgb(19, 19, 19);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: rgb(10, 10, 9);
+}
+
+button:hover {
+  color: aliceblue;
+  background-color: #06b357;
+}
+
+button {
+  background-color: #be9606;
+  color: rgb(20, 18, 18);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+  
+ .hero {
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: changeBackground 12s infinite;
+    background-size: cover;
+    background-position: center;
+  }
+  @keyframes changeBackground {
+    0% {
+      background-image: url('https://blog.yatradham.org/wp-content/uploads/2023/12/Palani-Murugan-Temple-Timings-History-and-Alangaram-Blog.jpg');
+    }
+    33% {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8ehtx5s26tueUL81Py2EzZSf17EFJt0eRA&s');
+    }
+    66% {
+      background-image: url('https://lh3.googleusercontent.com/p/AF1QipNHQs3ZBLNYE8rwv1iMl8S5uS40QvqrL_onXQK4=s1360-w1360-h1020');
+    }
+    100% {
+      background-image: url('https://lh3.googleusercontent.com/p/AF1QipMHc45veJVmm-1-UtPq3U9tCIeF78oQrZMeTqf8=s1360-w1360-h1020');
+    }
+  }

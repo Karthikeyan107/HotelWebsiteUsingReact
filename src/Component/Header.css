@@ -1,0 +1,39 @@
+/* Header Component */
+header {
+  position: fixed;   /* Distance from the top of the viewport */     /* Distance from the left side of the viewport */
+ width: 100%;  /* Full width of the viewport */
+  background-color: rgb(64, 63, 63);
+  color: rgb(200, 171, 4);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+ justify-content: space-between;
+}
+header .logo h1 {
+  margin: 0;
+  font-size: 165%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color:rgb(200, 171, 4);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.0rem;
+  transition: color 0.3s ease;
+}
+
+
+header nav ul li a:hover {
+  color: #ded9d8; /* Highlight color on hover */
+}
