@@ -75,6 +75,7 @@ export default function BookingSection() {
               checkIn: date,
               checkOut: formData.checkOut && formData.checkOut < date ? null : formData.checkOut,
             })}
+            minDate={new Date()} 
             required
           />
           <DatePicker
@@ -131,7 +132,7 @@ export default function BookingSection() {
             placeholder="Enter your email"
             required
           />
-          <FormControl>
+          <FormControl required>
             <InputLabel>Number of Guests</InputLabel>
             <Select name="numberOfGuests" value={formData.numberOfGuests} onChange={handleChange}>
               {[...Array(6).keys()].map((num) => (
@@ -140,7 +141,7 @@ export default function BookingSection() {
             </Select>
           </FormControl>
 
-          <FormControl>
+          <FormControl required>
             <InputLabel>Room Type</InputLabel>
             <Select
               name="roomType"

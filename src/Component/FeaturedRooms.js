@@ -37,7 +37,7 @@ const rooms = [
   },
   {
     id: 6,
-    title: "AC ..Suite",
+    title: "AC Suite",
     description: "Top-tier suite with luxurious furnishings.",
     imageUrl: "https://media.istockphoto.com/id/1042424568/photo/3d-rendering-luxury-modern-bedroom-suite-tv-with-wardrobe-and-walk-in-closet.jpg?s=612x612&w=0&k=20&c=AGoD3syG6mjPqWcqFVrcpzgFK_nt5SgwlVcsmyPoLbk=",
   },
@@ -51,6 +51,7 @@ const handleBooking = () => {
 };
 
   return (
+    <section id="rooms">
     <div className="room-selection">
       <h2 className="section-title">Select Your Room</h2>
       <div className="room-grid">
@@ -70,5 +71,6 @@ const handleBooking = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 }
